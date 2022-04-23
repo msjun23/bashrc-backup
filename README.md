@@ -1,3 +1,4 @@
+```bash
 # Python3 trouble shooting for Jetson board
 export OPENBLAS_CORETYPE=ARMV8 python3
 
@@ -29,3 +30,4 @@ export ROS_MASTER_URI=http://${ROS_IP}:11311
 alias ccw='cd ~/carto_ws'
 alias ccs='cd ~/carto_ws/src'
 alias ccm='cd ~/carto_ws && catkin_make_isolated --install --use-ninja'
+```
