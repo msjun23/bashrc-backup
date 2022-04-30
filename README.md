@@ -14,6 +14,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
 # bashrc aliases
 alias gb='gedit ~/.bashrc'
 alias sb='source ~/.bashrc'
+alias cb='cat ~/.bashrc'
 
 # ROS aliases
 alias cw='cd ~/catkin_ws'
