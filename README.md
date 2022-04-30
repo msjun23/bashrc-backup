@@ -56,6 +56,7 @@ alias cm='cd ~/colcon_ws && colcon build'
 
 # ROS setting
 source /opt/ros/foxy/setup.bash
+source ~/colcon_ws/install/setup.bash
 
 # colcon setting
 source /usr/share/colcon_cd/function/colcon_cd.sh
