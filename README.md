@@ -1,8 +1,13 @@
+|||
+|--|--|
+|OS|Ubuntu 18.04 / Jetpack 4.4~5|
+|ROS|Melodic|
+
 ```bash
 # Python3 trouble shooting for Jetson board
 export OPENBLAS_CORETYPE=ARMV8 python3
 
-# CUDA Setting
+# CUDA setting
 export PATH=/usr/local/cuda-10.2/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
 
@@ -15,7 +20,7 @@ alias cw='cd ~/catkin_ws'
 alias cs='cd ~/catkin_ws/src'
 alias cm='cd ~/catkin_ws && catkin_make'
 
-# ROS Setting
+# ROS setting
 source /opt/ros/melodic/setup.bash
 source ~/catkin_ws/devel/setup.bash
 source ~/carto_ws/install_isolated/setup.bash	# Cartographer
@@ -30,4 +35,30 @@ export ROS_MASTER_URI=http://${ROS_IP}:11311
 alias ccw='cd ~/carto_ws'
 alias ccs='cd ~/carto_ws/src'
 alias ccm='cd ~/carto_ws && catkin_make_isolated --install --use-ninja'
+```
+
+---
+
+|||
+|--|--|
+|OS|Ubuntu 20.04|
+|ROS|Foxy|
+
+```bash
+# bashrc aliases
+alias gb='gedit ~/.bashrc'
+alias sb='source ~/.bashrc'
+
+# ROS aliases
+alias cw='cd ~/colcon_ws'
+alias cs='cd ~/colcon_ws/src'
+alias cm='cd ~/colcon_ws && colcon build'
+
+# ROS setting
+source /opt/ros/foxy/setup.bash
+
+# colcon setting
+source /usr/share/colcon_cd/function/colcon_cd.sh
+export _colcon_cd_root=/opt/ros/foxy/
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 ```
