@@ -46,6 +46,10 @@ alias ccm='cd ~/carto_ws && catkin_make_isolated --install --use-ninja'
 |ROS|Foxy|
 
 ```bash
+# CUDA 11.3.1
+export PATH=/usr/local/cuda-11.3/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
 # bashrc aliases
 alias gb='gedit ~/.bashrc'
 alias sb='source ~/.bashrc'
@@ -69,4 +73,5 @@ source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 # Tutlebot3 setting
 export ROS_DOMAIN_ID=30 #TURTLEBOT3
 export TURTLEBOT3_MODEL=burger
+
 ```
