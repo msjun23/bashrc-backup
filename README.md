@@ -32,7 +32,7 @@ export ROS_IP=localhost     # My IP address
 export ROS_HOSTNAME=${ROS_IP}
 export ROS_MASTER_URI=http://${ROS_IP}:11311
 
-# Cartographer alias
+# Cartographer aliases
 alias ccw='cd ~/carto_ws'
 alias ccs='cd ~/carto_ws/src'
 alias ccm='cd ~/carto_ws && catkin_make_isolated --install --use-ninja'
